@@ -26,12 +26,25 @@ h2 {
 }
 
 #start {
-    text-align: center;
-    font-size: 30px;
+  display: block; /* Make the button a block element to center it */
+  margin: 0 auto; /* Center the button horizontally */
+  font-size: 30px;
+  text-align: center;
 }
 
 #timer{
     color: white;
+}
+
+.difficulty-selection {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.difficulty-selection button {
+  margin: 0 10px;
+  font-size: 20px;
 }
 
 .grid {
@@ -40,7 +53,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  /*cursor: url('./assets/mallet.png'), pointer;*/
+  cursor: url('../assets/mallet.png'), pointer;
 }
 
 .hole {
@@ -64,19 +77,24 @@ h2 {
 }
 
 .mole {
-  /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
-  background-size: 40%;
+  background:url('../assets/mole.png') bottom center no-repeat;
+    background-size: 40%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
   /*transition: transform 0.5s;*/
   transition: all 1s;
+  cursor: url('../assets/mallet.png'), auto;
   pointer-events:auto;
 }
 
 .hole.show .mole {
   top: 0;
   /*transform: scale(1.1);*/
+}
+
+
+.show-mallet-cursor {
+  cursor: url('../assets/mallet.png'), auto;
 }
