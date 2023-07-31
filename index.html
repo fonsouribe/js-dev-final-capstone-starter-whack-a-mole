@@ -1,11 +1,20 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="./src/styles.css">
   </head>
   <body>
-    <h1></h1>
+    <div class ="game-container">
+    <h1 id="title">Catch-a-Worm!</h1>
+    <audio id="moleSong" src="assets/molesong.mp3" autoplay loop></audio>
     <div>
+      <div class="difficulty-selection">
+        <button id="easy">Easy</button>
+        <button id="normal">Medium</button>
+        <button id="hard">Hard</button>
+      </div>
       <div>
+        <button id="start">start</button>
         <h2>Click start to play!</h2>
       </div>
       <div>
@@ -23,7 +32,29 @@
         <div id="mole1" class="mole"></div>
       </div>
       <!--TODO: Add the missing holes and moles. -->
+      <div id="hole2" class="hole">
+        <div id="mole2" class="mole"></div>
+      </div>
+      <div id="hole3" class="hole">
+        <div id="mole3" class="mole"></div>
+      </div>
+      <div id="hole4" class="hole">
+        <div id="mole4" class="mole"></div>
+      </div>
+      <div id="hole5" class="hole">
+        <div id="mole5" class="mole"></div>
+      </div>
+      <div id="hole6" class="hole">
+        <div id="mole6" class="mole"></div>
+      </div>
+      <div id="hole7" class="hole">
+        <div id="mole7" class="mole"></div>
+      </div>
+      <div id="hole8" class="hole">
+        <div id="mole8" class="mole"></div>
+      </div>
     </div>
     <script src="./src/index.js"></script>
+    </div>
   </body>
 </html>
