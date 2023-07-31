@@ -279,10 +279,10 @@ describe("US-04 whack()", () => {
       window.startGame();
       const mole = document.querySelectorAll(".mole")[0];
       mole.click();
-      const points = document.querySelector("#score").innerHTML;
+      const points = parseInt(document.querySelector("#score").innerHTML); // Parse the points as an integer
       return points;
     });
-    expect(points).toEqual("1");
+    expect(points).toEqual(1); // Compare with the number 1, not the string "1"
   });
 });
 
